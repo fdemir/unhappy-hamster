@@ -28,9 +28,10 @@ Please note that the sentiment analysis may not be perfect and should be used as
 ## References
 
 - [Sentiment Analysis](https://en.wikipedia.org/wiki/Sentiment_analysis)
-- [Sentiment Analysis with Go](https://towardsdatascience.com/sentiment-analysis-with-go-8dfbdfb88d1d)
 - [Türkçe Duygu Analizi Veriseti](https://huggingface.co/datasets/winvoker/turkish-sentiment-analysis-dataset)
 - [Türkçe Duygu Analizi Modeli](https://huggingface.co/emre/turkish-sentiment-analysis)
+- [Getting Started with Sentiment Analysis using Python](https://huggingface.co/blog/sentiment-analysis-python)
+- [HuggingFace Tasks](https://huggingface.co/tasks)
 
 ## License
 

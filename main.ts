@@ -5,13 +5,8 @@ import {
   SentimentAnalysisResponse,
   SentimentMap,
 } from "./type.ts";
-import { initSecret, removeSecret } from "./secret.ts";
+import { initSecret } from "./secret.ts";
 import { MODEL_API } from "./constant.ts";
-import {
-  keypress,
-  KeyPressEvent,
-} from "https://deno.land/x/cliffy@v1.0.0-rc.3/keypress/mod.ts";
-import { tty } from "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/tty.ts";
 
 const DISPLAY: Record<SentimentMap, DisplayType> = {
   negative: {
