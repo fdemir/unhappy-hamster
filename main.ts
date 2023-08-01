@@ -1,12 +1,14 @@
-import { Input } from "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/mod.ts";
-import { colors } from "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/mod.ts";
+import { colors } from "@cliffy/ansi";
+
 import {
   DisplayType,
   SentimentAnalysisResponse,
   SentimentMap,
 } from "./type.ts";
+
 import { initSecret } from "./secret.ts";
 import { MODEL_API } from "./constant.ts";
+import { getInput } from "./input.ts";
 
 const DISPLAY: Record<SentimentMap, DisplayType> = {
   negative: {
@@ -65,20 +67,14 @@ async function main() {
   let input = "";
 
   while (!input) {
-    input = await Input.prompt({
-      message: "Enter the review:",
-      validate: (value) => {
-        if (value.length < 3) return "Please enter a valid input";
-
-        return true;
-      },
-    });
+    input = await getInput();
 
     try {
       await analyzeSentiment(input, HF_KEY);
     } catch (err) {
       console.log(colors.red(err.message));
     }
+
     input = "";
   }
 }
