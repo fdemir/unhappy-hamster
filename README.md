@@ -21,6 +21,12 @@ deno run --allow-net main.ts
 
 ```
 
+## Known Issues
+
+### Error: Model emre/turkish-sentiment-analysis is currently loading:
+
+Model runs on-demand and it takes some time to load. Please wait for a few seconds and try again.
+
 ## Disclaimer
 
 Please note that the sentiment analysis may not be perfect and should be used as a reference for making important decisions.
