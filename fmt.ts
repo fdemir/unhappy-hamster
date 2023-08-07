@@ -1,4 +1,6 @@
+// deno-lint-ignore-file ban-ts-comment
 // @ts-nocheck
+// TODO: Object.keys is not type safe
 import { colors } from "@cliffy/ansi";
 import { DisplayType, SentimentAnalysisResult, SentimentMap } from "./type.ts";
 

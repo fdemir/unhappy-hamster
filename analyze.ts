@@ -1,3 +1,4 @@
+// deno-lint-ignore-file ban-ts-comment
 import { MODEL_API } from "./constant.ts";
 import {
   SentimentAnalysisResponse,
