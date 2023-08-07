@@ -6,9 +6,9 @@ function validateInput(value: string) {
   return true;
 }
 
-export function getInput() {
+export function getInput(customValidator?: (value: string) => boolean) {
   return Input.prompt({
     message: "Enter the review:",
-    validate: validateInput,
+    validate: customValidator || validateInput,
   });
 }
