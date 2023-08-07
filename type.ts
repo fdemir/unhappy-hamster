@@ -21,3 +21,8 @@ export type DisplayType = {
   title: string;
   color: (text: string) => string;
 };
+
+export type Handler = (params: {
+  input: string | string[];
+  HF_KEY: string;
+}) => Promise<void>;
