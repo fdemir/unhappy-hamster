@@ -12,7 +12,7 @@ Unhappy Hamster is a command-line tool that allows you to analyze customer senti
 
 - Analyze product reviews to determine customer sentiment.
 - Provide a sentiment score for each review, indicating the level of happiness.
-- Provide a bulk sentiment score for all reviews, indicating the overall level of happiness(todo)
+- Provide a bulk sentiment score for all reviews, indicating the overall level of happiness.
 
 ### Development
 
